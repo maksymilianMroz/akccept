@@ -1,0 +1,46 @@
+.site-footer {
+    display: flex;
+    flex-direction: wrap;
+
+    padding-bottom: 2em;
+
+    .contact-data {
+        padding-left: 7em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .contact-item {
+            margin: 0 10px;
+
+            .contact-item__header {
+                color: #fff;
+            }
+        }
+
+        .order-contact {
+            transition: all ease-in-out 1s;
+
+            a {
+                color: #000;
+            }
+        }
+
+    }
+
+    .social-media {
+        padding-right: 7em;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .social-media-link {
+        margin: .2em;
+        font-size: 3em;
+        transition: all ease .4s;
+
+        &:hover {
+            color: rgb(155, 0, 0);
+        }
+    }
+}

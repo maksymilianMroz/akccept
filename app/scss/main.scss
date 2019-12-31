@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+.main-content {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    top: 50%;
+    transition: all .4s ease;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #fff;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.is-disabled {
+    cursor: not-allowed !important;
+}
+
+.zero-opacity-class {
+    opacity: 0;
+    transform: translate(3em);
+}
+
+.order-contact.zero-opacity-class {
+    opacity: 0;
+    transform: translateY(300px)
+}
+
+.btn {
+    padding: 1em 2.5em;
+    background: #fff;
+    color: #111111;
+    border-radius: 2px;
+    border: 1px solid #fff;
+    display: inline-block;
+
+    &:hover {
+        -webkit-box-shadow: 10px 10px 15px -8px rgba(0, 0, 0, 0.57);
+        -moz-box-shadow: 10px 10px 15px -8px rgba(0, 0, 0, 0.57);
+        box-shadow: 10px 10px 15px -8px rgba(0, 0, 0, 0.57);
+        opacity: 1;
+    }
+}
+
+
+a:hover {
+    opacity: .9;
+}
+
+video {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.fastChange {
+    transition: all .3s ease;
+    top: -100% !important;
+}
+
+/************ HEADER ************/
+
+@import '_header';
+@import '_main-part';
+@import '_site-footer';
+@import '_products';
+@import '_product';
+
+.cookies-container {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -30px;
+    opacity: 0;
+    background: black;
+    transition: all 1s ease-in;
+
+    #close-cookie {
+        color: #fff;
+    }
+}

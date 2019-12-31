@@ -1,0 +1,39 @@
+.main-content-container {
+    padding-left: 7em;
+    transition: all ease-in-out 1s;
+
+    .main-title {
+        font-size: 5vw;
+        color: #fff;
+        margin-bottom: .4em;
+
+        &:after {
+            transition: all ease-in-out 1s;
+            background: none repeat scroll 0 0 #ffffff;
+            content: "";
+            display: block;
+            height: 3px;
+            width: 0;
+        }
+
+        &:after {
+            width: 50%;
+        }
+    }
+
+    .btn {
+        padding: 1em 2.5em;
+        background: #fff;
+        color: #111111;
+        border-radius: 2px;
+        border: 1px solid #fff;
+        display: inline-block;
+
+        &:hover {
+            -webkit-box-shadow: 10px 10px 15px -8px rgba(0, 0, 0, 0.57);
+            -moz-box-shadow: 10px 10px 15px -8px rgba(0, 0, 0, 0.57);
+            box-shadow: 10px 10px 15px -8px rgba(0, 0, 0, 0.57);
+            transform: scale(1.01);
+        }
+    }
+}

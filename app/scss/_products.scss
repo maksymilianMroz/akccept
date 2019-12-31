@@ -1,0 +1,110 @@
+.main-products-site {
+    background: rgb(7, 7, 7);
+}
+
+.products-container {
+    width: 100%;
+    height: 70%;
+    top: 15%;
+    background: transparent;
+    left: 0;
+    position: absolute;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+    justify-content: center;
+
+    .products-wrapper {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+
+
+        .arrows-container {
+            position: absolute;
+            bottom: 0;
+            margin-bottom: 1em;
+            right: 5em;
+
+            a svg {
+                font-size: 3em;
+                margin: 0 5px;
+            }
+        }
+
+        a {
+            color: #000;
+        }
+
+        .category-list {
+            display: flex;
+            overflow-x: scroll;
+            white-space: nowrap;
+
+            &::-webkit-scrollbar-track {
+                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                background-color: #F5F5F5;
+            }
+
+            &::-webkit-scrollbar {
+                height: 3px;
+                background-color: #F5F5F5;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: #000000;
+            }
+
+            .category-list-item {
+                display: inline-block;
+                margin: 0 1.5em;
+                flex: 0 0 auto;
+
+                a {
+                    width: 400px;
+
+                    &:hover .product-direct-container h2 {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+
+                    &:hover .product-direct-container p {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+
+                    .product-direct-container {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+
+                        h2 {
+                            font-size: 1.1em;
+                            text-transform: uppercase;
+                            font-weight: bold;
+                            margin-bottom: 5px;
+                            opacity: 0;
+                            transform: translateY(-10px);
+                            transition: all .5s ease;
+                        }
+
+                        p {
+                            opacity: 0;
+                            width: 100%;
+                            transform: translateY(10px);
+                            transition: all .5s ease;
+                            padding-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
