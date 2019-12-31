@@ -247,7 +247,8 @@ video {
               width: 100%;
               transform: translateY(10px);
               transition: all .5s ease;
-              padding-bottom: 10px; }
+              padding-bottom: 10px;
+              text-align: center; }
 
 .product-page-arrow {
   top: 1em;
