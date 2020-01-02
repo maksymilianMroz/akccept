@@ -1,4 +1,4 @@
-setTimeout(function() {
+setTimeout(function () {
   let setOpacity = () => {
     let sectionWrapper = document.querySelectorAll(".main-content-container");
     for (let i = 0; i < sectionWrapper.length; i++) {
@@ -8,7 +8,7 @@ setTimeout(function() {
   setOpacity();
 }, 500);
 
-setTimeout(function() {
+setTimeout(function () {
   let setOpacity = () => {
     let sectionWrapper = document.querySelectorAll(".order-contact");
     for (let i = 0; i < sectionWrapper.length; i++) {
@@ -20,7 +20,7 @@ setTimeout(function() {
 
 function sideScroll(element, direction, speed, distance, step) {
   scrollAmount = 0;
-  var slideTimer = setInterval(function() {
+  var slideTimer = setInterval(function () {
     if (direction == "left") {
       element.scrollLeft -= step;
     } else {
@@ -38,10 +38,17 @@ function hideContainerAnimation(e) {
 
   document.querySelector(".main-content").classList.add("fastChange");
 
-  setTimeout(function() {
+  setTimeout(function () {
     window.location = "products.html";
   }, 500);
 }
+
+function playBackgroundMovie() {
+  document.querySelector('video').defaultPlaybackRate = 1.0;
+  document.querySelector('video').playbackRate = 0.7;
+  document.querySelector('video').play();
+}
+playBackgroundMovie();
 
 let productsBtn = document.querySelector(".main-nav__list-item.products");
 productsBtn.addEventListener("click", hideContainerAnimation);
