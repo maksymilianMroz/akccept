@@ -153,22 +153,25 @@ video {
     padding-left: 7em;
     display: flex;
     align-items: center;
-    justify-content: space-between; }
+    justify-content: flex-start; }
     .site-footer .contact-data .contact-item {
-      margin: 0 10px; }
+      margin: 0 35px; }
       .site-footer .contact-data .contact-item .contact-item__header {
         color: #fff; }
+        .site-footer .contact-data .contact-item .contact-item__header a {
+          text-align: left; }
     .site-footer .contact-data .order-contact {
       transition: all ease-in-out 1s; }
       .site-footer .contact-data .order-contact a {
-        color: #000; }
+        color: #000;
+        text-align: center; }
   .site-footer .social-media {
     padding-right: 7em;
     display: flex;
     justify-content: flex-end; }
   .site-footer .social-media-link {
-    margin: .2em;
-    font-size: 3em;
+    margin: .40em;
+    font-size: 1.75em;
     transition: all ease .4s; }
     .site-footer .social-media-link:hover {
       color: #9b0000; }

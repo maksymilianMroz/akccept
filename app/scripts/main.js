@@ -45,7 +45,7 @@ function hideContainerAnimation(e) {
 
 function playBackgroundMovie() {
   document.querySelector('video').defaultPlaybackRate = 1.0;
-  document.querySelector('video').playbackRate = 0.7;
+  document.querySelector('video').playbackRate = 0.65;
   document.querySelector('video').play();
 }
 playBackgroundMovie();
