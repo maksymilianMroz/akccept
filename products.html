@@ -10,13 +10,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="app/css/main.css">
-    <script type="text/javascript">
-        function startAnimation() {
-            document.querySelector(".main-content").style.top = "0";
 
-        }
-        window.onload = startAnimation;
-    </script>
 </head>
 
 <body onload="startAnimation();">
@@ -234,6 +228,13 @@
         back.onclick = function () {
             sideScroll(container, "left", 30, 200, 10);
         };
+
+
+        function startAnimation() {
+            document.querySelector(".main-content").style.top = "0";
+
+        }
+        window.onload = startAnimation;
     </script>
 </body>
 
